@@ -496,7 +496,10 @@ HTMLtoJSX.prototype = {
     var tagName = jsxTagName(node.tagName);
     var attributes = [];
     for (var i = 0, count = node.attributes.length; i < count; i++) {
-      attributes.push(this._getElementAttribute(node, node.attributes[i]));
+      var attribute = this._getElementAttribute(node, node.attributes[i]);
+      if(attribute) {
+        attributes.push(attribute);
+      }
     }
 
     if (tagName === 'textarea') {
@@ -613,6 +616,9 @@ HTMLtoJSX.prototype = {
     switch (attribute.name) {
       case 'style':
         return this._getStyleAttribute(attribute.value);
+      case 'true':
+      case 'false':
+            return false;
       default:
         var tagName = jsxTagName(node.tagName);
         var name =
