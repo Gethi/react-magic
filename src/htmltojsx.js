@@ -25,7 +25,9 @@ var NODE_TYPE = {
 
 var ATTRIBUTE_MAPPING = {
   'for': 'htmlFor',
-  'class': 'className'
+  'class': 'className',
+  'onclick':  'onClick',
+  'onchange':  'onChange',
 };
 
 var ELEMENT_ATTRIBUTE_MAPPING = {
