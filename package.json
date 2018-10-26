@@ -1,6 +1,6 @@
 {
   "name": "htmltojsx-modified",
-  "version": "0.3.6-dev",
+  "version": "0.3.7-dev",
   "description": "Converts HTML to JSX for use with React",
   "main": "src/htmltojsx.js",
   "bin": "src/cli.js",
@@ -38,7 +38,10 @@
     "html",
     "react-component"
   ],
-  "author": ["Daniel Lo Nigro <daniel@dan.cx> (http://dan.cx/)", "Antoine Bigard"],
+  "author": [
+    "Daniel Lo Nigro <daniel@dan.cx> (http://dan.cx/)",
+    "Antoine Bigard"
+  ],
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/Gethi/react-magic/issues"
