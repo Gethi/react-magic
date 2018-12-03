@@ -620,6 +620,7 @@ HTMLtoJSX.prototype = {
         return this._getStyleAttribute(attribute.value);
       case 'true':
       case 'false':
+      case '"':
             return false;
       default:
         var tagName = jsxTagName(node.tagName);

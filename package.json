@@ -1,6 +1,6 @@
 {
   "name": "htmltojsx-modified",
-  "version": "0.3.7-dev",
+  "version": "0.3.8-dev",
   "description": "Converts HTML to JSX for use with React",
   "main": "src/htmltojsx.js",
   "bin": "src/cli.js",
